@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:minHeight="250dp"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/personName"
+        android:layout_width="273dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="69dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="5dp"
+        android:ems="10"
+        android:hint="Your name:"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/personAdj"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.96" />
+
+    <EditText
+        android:id="@+id/personAdj"
+        android:layout_width="273dp"
+        android:layout_height="53dp"
+        android:layout_marginStart="69dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:ems="10"
+        android:hint="adj of new partner"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/profName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/personName" />
+
+    <EditText
+        android:id="@+id/profName"
+        android:layout_width="273dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="69dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:ems="10"
+        android:hint="Prof Name"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/personLastP"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/personAdj" />
+
+    <EditText
+        android:id="@+id/personLastP"
+        android:layout_width="273dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="69dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:ems="10"
+        android:hint="Last Partner Name"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/lastPAdj"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/profName" />
+
+    <EditText
+        android:id="@+id/lastPAdj"
+        android:layout_width="273dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="69dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:ems="10"
+        android:hint="adj of last partner"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/verb"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/personLastP" />
+
+    <EditText
+        android:id="@+id/verb"
+        android:layout_width="273dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="69dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:ems="10"
+        android:hint="verb"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/noun"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lastPAdj" />
+
+    <EditText
+        android:id="@+id/noun"
+        android:layout_width="273dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="69dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:ems="10"
+        android:hint="Noun"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/personAdj2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/verb" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="147dp"
+        android:layout_marginEnd="107dp"
+        android:text="MadLibs"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/personAdj2" />
+
+    <EditText
+        android:id="@+id/personAdj2"
+        android:layout_width="277dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="67dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="49dp"
+        android:ems="10"
+        android:hint="New P. Adj 2"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/noun" />
+
+</android.support.constraint.ConstraintLayout>
